@@ -45,8 +45,8 @@ public class StandardError implements Serializable{
 		return messege;
 	}
 
-	public void setMessege(String messege) {
-		this.messege = messege;
+	public void setMessage(String message) {
+		this.messege = message;
 	}
 
 	public String getPath() {
@@ -56,6 +56,5 @@ public class StandardError implements Serializable{
 	public void setPath(String path) {
 		this.path = path;
 	}
-	
-	
+
 }

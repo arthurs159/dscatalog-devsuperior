@@ -54,3 +54,14 @@ INSERT INTO tb_product_category (product_id, category_id) VALUES (22, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (23, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (24, 3);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (25, 3);
+
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Arthur Scarpati', 12225514101, 2800.0, '1988-08-20T03:00:00Z', 0); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Joao Meirelees', 13326514202, 2100, '1991-02-5T04:00:00Z', 1); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Carlos Zomborbie', 14467514303, 1500.0, '1993-11-20T08:00:00Z', 3); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Hugo Teigao', 15558514404, 5600.0, '1994-07-20T05:30:00Z', 2); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Genevaldo Ostreca', 16649514505, 7000.0, '1997-09-20T09:20:00Z', 1); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Miriam Entes', 17711514606, 1987.0, '2000-10-20T10:42:00Z', 0); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Samuel Eduardo', 18822514707, 1197.0, '1965-12-20T07:30:00Z', 0); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Pamela Osborne', 19934514808, 1359.0, '1949-08-20T05:14:00Z', 2); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Cris Lhamberg', 10123514909, 6587.0, '1981-07-20T12:34:00Z', 1); 
+INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Bruce Wayne', 11112515010, 99999.0, '1972-07-20T11:38:00Z', 0); 

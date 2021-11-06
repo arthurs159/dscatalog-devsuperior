@@ -45,7 +45,6 @@ public class ProductService {
 		Optional<Product> obj = repository.findById(id);
 		Product entity = obj.orElseThrow(() -> new EntityNotFoundException("ID Não encontrado =( "));
 		return new ProductDTO(entity, entity.getCategories());
-
 	}
 
 	@Transactional

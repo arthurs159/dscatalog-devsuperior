@@ -1,11 +1,10 @@
-import Home from 'pages/Home';
-import './assets/styles/custom.scss';
+import 'assets/styles/custom.scss';
 import './App.css';
 
-const App = () => {
-  return (
-      <Home />
-  );
-};
+import Routes from 'Routes';
+
+function App() {
+  return <Routes />;
+}
 
 export default App;

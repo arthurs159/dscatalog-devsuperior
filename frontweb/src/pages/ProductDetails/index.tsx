@@ -18,11 +18,10 @@ const ProductDetail = () => {
   
   const [product, setProduct] = useState<Product>();
 
-
   useEffect( () => {
     axios.get(`${BASE_URL}/products/${productId}`)
-    .then(response => {
-      setProduct(response.data);
+        .then(response => {
+        setProduct(response.data);
     });
   }, [productId]);
 

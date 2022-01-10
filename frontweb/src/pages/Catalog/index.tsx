@@ -1,4 +1,3 @@
-import axios from 'axios';
 import Pagination from 'components/Pagination';
 import ProductCard from 'components/ProductCard';
 import { useEffect, useState } from 'react';
@@ -6,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Product } from 'types/product';
 import { AxiosParams } from 'types/vendor/axios';
 import { SpringPage } from 'types/vendor/spring';
-import { BASE_URL } from 'util/requests';
+import { requestBackend } from 'util/requests';
 import CardLoader from './CardLoader';
 
 import './styles.css';
@@ -18,7 +17,7 @@ const Catalog = () => {
   useEffect(() => {
     const params: AxiosParams = {
       method: 'GET',
-      url: `${BASE_URL}/products`,
+      url: "/products",
       params: {
         page: 0,
         size: 12,
@@ -26,8 +25,7 @@ const Catalog = () => {
     };
 
     setIsloading(true);
-
-    axios(params)
+    requestBackend(params)
       .then((response) => {
         setPage(response.data);
         console.log(page);
@@ -35,7 +33,7 @@ const Catalog = () => {
       .finally(() => {
         setIsloading(false);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

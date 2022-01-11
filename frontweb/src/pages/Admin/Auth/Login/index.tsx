@@ -7,7 +7,6 @@ import { useState } from 'react';
 import './styles.css';
 
 
-
 type FormData = {
   username: string;
   password: string;
